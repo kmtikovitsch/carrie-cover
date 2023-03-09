@@ -1,0 +1,251 @@
+body{
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.linebg{
+  background-image: url("linebg.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 500px;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.sktxt{
+background-repeat: no-repeat;
+background-image: url("sktxt.png");
+width: 100%;
+height: 100%;
+position: absolute;
+bottom: 27px;
+left: 500px;
+opacity: 0%;
+z-index: 9000;
+}
+.sktxt:hover{
+  animation: sktxt_fadein, infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+@keyframes sktxt_fadein{
+  0%, 100%{opacity: 0%;}
+  16%{opacity:25%;}
+  32%{opacity: 50%;}
+  50%{opacity: 100%;}
+  70%{opacity: 50%;}
+  80%{opacity: 25%;}
+}
+
+@keyframes bd_drop3{
+0%{top: -10px;}
+1%{top:0px;}
+2%{top:10px;}
+10%{top: 185px; left: 227px;opacity: 100%;}
+25%{top: 400px;opacity: 100%;}
+100%{top: 1000px;opacity: 100%;}
+}
+.bd3{
+  background-image: url("blooddrop.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  animation-fill-mode: forwards;
+  animation: bd_drop3 infinite 5s;
+  width: 100%;
+  height: 100%;
+  top:350px;
+  left: 227px;
+  animation-delay: 8s;
+  opacity: 0%;
+}
+.bd1{
+  background-image: url("blooddrop.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 75px;
+  top: 190px;
+  z-index: -500px;
+  width: 100%;
+  height: 100%;
+  animation: bd_drop infinite 6s;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0%;
+}
+.bd2{
+  background-image: url("blooddrop.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 403px;
+  top: 190px;
+  z-index: -500px;
+  width: 100%;
+  height: 100%;
+  animation: bd_drop2 infinite 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0%;
+}
+@keyframes bd_drop2{
+  0%{top: -10px;}
+  1%{top:0px;}
+  2%{top:10px;}
+  10%{top: 185px; left: 403px;opacity: 100%;}
+  25%{top: 400px;opacity: 100%;}
+  100%{top: 1000px;opacity: 100%;}
+}
+@keyframes bd_drop{
+  0%{top: -10px;}
+  1%{top:0px;}
+  2%{top:10px;}
+  10%{top: 190px; left: 75px;opacity: 100%;}
+  25%{top: 230px;opacity: 100%;}
+  100%{top: 1000px;opacity: 100%;}
+}
+
+
+.blood{
+  background-image: url("blood.png");
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: bloodslide 6s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes bloodslide {
+  0%{top: -1000px;}
+  25%{top: -500px;}
+  60%{top: -200px;}
+  100%{top: 0px;}
+}
+.lineslide{
+  background-image: url("lineslide.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 467px;
+  z-index: -100;
+  animation: line_slide linear 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes line_slide {
+  0%{left: 83px;}
+  20%{left:100px;}
+  40%{left:200px;}
+  60%{left:300px;}
+  80%{left: 400px;}
+  100%{left:500px;}
+}
+
+.carC{
+  background-image: url("carC.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 570px;
+  left: 80px;
+}
+.carA{
+  background-image: url("carA.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 560px;
+  left: 150px;
+}
+.carR1{
+  background-image: url("carR1.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 580px;
+  left: 220px;
+}
+.carR2{
+  background-image: url("carR2.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 590px;
+  left: 305px;
+}
+.carI{
+  background-image: url("carI.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 560px;
+  left: 380px;
+}
+.carE{
+  background-image: url("carE.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 560px;
+  left: 410px;
+}
+
+.crown{
+  background-image: url("crown.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 520px;
+  left: 70px;
+  width: 100%;
+  height: 100%;
+  animation: crownfadein 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 9s;
+  opacity: 0%;
+}
+
+@keyframes crownfadein{
+  0%{ top: 500px; opacity: 0%;}
+  30%{top: 505px; opacity: 40%;}
+  80%{top: 515px; opacity: 80%;}
+  100%{top: 520px; opacity: 100%;}
+}
+
+.carC, .carA, .carR1, .carR2, .carI, .carE{
+animation: carrie_shake .25s infinite;
+animation-fill-mode: forwards;
+z-index: -800;
+animation-delay: 8s;
+}
+
+@keyframes carrie_shake{
+  10%, 90% {
+  transform: translate3d(-1px, 0, 0);
+}
+20%, 80% {
+  transform: translate3d(1px, 0, 0);
+}
+30%, 50%, 70% {
+  transform: translate3d(-1px, 0, 0);
+}
+40%, 60% {
+  transform: translate3d(1px, 0, 0);
+}
+}
+
+.linecover{
+  background-color: black;
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  top: 300px;
+  left: 1035px;
+  z-index: 1000;
+}
